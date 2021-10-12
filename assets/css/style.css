@@ -35,7 +35,7 @@ color: rgba(255, 255, 255, 0.658) !important;
 font-weight: bold
  }
  .profileSmallDescription a span{
-     color: #ffff;
+     color: #ffff !important;
      font-weight:500;
      margin-left:10px
  }
