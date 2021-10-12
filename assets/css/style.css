@@ -31,7 +31,7 @@
  .profileSmallDescription a{
 text-decoration: none;
 width: 100%;
-color: rgba(255, 255, 255, 0.658);
+color: rgba(255, 255, 255, 0.658) !important;
 font-weight: bold
  }
  .profileSmallDescription a span{
