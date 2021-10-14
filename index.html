@@ -18,9 +18,10 @@
 
 </head>
 
+
 <body>
     <div class="wrapper">
-        <div class="container container-fluid bg-light">
+        <div class="container container-fluid ">
             <header>
                 <div class="row">
                     <div class="col-3 p-2 align-items-center justify-content-center"><a href="/" class="logo"><img
@@ -28,23 +29,23 @@
                     <div class="col-8 align-items-center justify-content-center ">
                         <form action="" class=" search h-100 d-flex align-items-center justify-content-center">
                             <div class="input-group"><input type="text" class="form-control" placeholder=""><button
-                                    class="btn btn-primary"><i class="fas fa-search"></i></button> </div>
+                                    class="btn btn-light"><i class="fas fa-search"></i></button> </div>
                         </form>
                     </div>
                     <div class="col-1 align-items-center justify-content-center">
                         <div class="menuControl d-flex align-items-center justify-content-center h-100">
-                            <i class="fa fa-ellipsis-v "></i>
+                            <i class="fa fa-ellipsis-v text-white"></i>
                         </div>
                     </div>
                 </div>
 
             </header>
             <form action="">
-                <select class="form-select op" aria-label="Default select example">
-                    <option class="w-100" selected>Select category</option>
-                    <option class="w-100" value="1">One</option>
-                    <option class="w-100" value="2">Two</option>
-                    <option class="w-100" value="3">Three</option>
+                <select class="form-select op" aria-label="Default select example"onchange="filterSelection(this.value)">
+                    <option class="w-100" selected value="all">Select category</option>
+                    <option class="w-100" value="garment">Garment</option>
+                    <option class="w-100" value="shoe">Shoes</option>
+                    <option class="w-100" value="AC">Appliances</option>
                 </select>
             </form>
 
@@ -60,7 +61,7 @@
                     <i class="backBtn fa fa-arrow-right"></i>
                 </div>
             </div>
-            <div class="professionCard mt-2">
+            <div class="professionCard filterCard shoe mt-2">
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-12">
 
@@ -80,16 +81,98 @@
                                         <a href="#">Deals in:<span>Shoes</span> </a>
                                         <a href="#">Total products:<span>400</span> </a>
                                         <a href="#">Employees:<span>400</span> </a>
-                                        <a href="singleDetail.html"><span>Show more...</span> </a>
+                                      
                                     </div>
                                 </div>
+                               <div class="col-12 flex-row">
+                                <div class="contactBtn">
+                                    <button class="btn"><a href="tel:123-456-7890"><i class="fab fa-whatsapp"></i></a></button>
+                                    <button class="btn"><a href="tel:123-456-7890"><i class="fas fa-phone"></i></a></button>
+                                   <a href="singleDetail.html"> <button class="btn btn-block">More Details</button></a>
+                                </div>
+                               
+                               </div>
                             </div>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="professionCard mt-2">
+            <div class="professionCard filterCard shoe mt-2">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-12">
+
+                        <div class="card p-2">
+                            <a href="#" class="shareOption"><i class="fa fa-share-alt"></i></a>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-4 align-items-center justify-content-center">
+                                    <div class="profileImg">
+                                        <img src="./assets/img/pro1.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+
+                                <div class="col-8">
+                                    <div class="profileSmallDescription">
+                                        <a href="#">Name:<span>Austin Geko</span> </a>
+                                        <a href="#">Joined:<span>02-Dec-2001</span> </a>
+                                        <a href="#">Deals in:<span>Shoes</span> </a>
+                                        <a href="#">Total products:<span>400</span> </a>
+                                        <a href="#">Employees:<span>400</span> </a>
+                                      
+                                    </div>
+                                </div>
+                               <div class="col-12 flex-row">
+                                <div class="contactBtn">
+                                    <button class="btn"><a href="tel:123-456-7890"><i class="fab fa-whatsapp"></i></a></button>
+                                    <button class="btn"><a href="tel:123-456-7890"><i class="fas fa-phone"></i></a></button>
+                                   <a href="singleDetail.html"> <button class="btn btn-block">More Details</button></a>
+                                </div>
+                               
+                               </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="professionCard filterCard shoe mt-2">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-12">
+
+                        <div class="card p-2">
+                            <a href="#" class="shareOption"><i class="fa fa-share-alt"></i></a>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-4 align-items-center justify-content-center">
+                                    <div class="profileImg">
+                                        <img src="./assets/img/pro1.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+
+                                <div class="col-8">
+                                    <div class="profileSmallDescription">
+                                        <a href="#">Name:<span>Austin Geko</span> </a>
+                                        <a href="#">Joined:<span>02-Dec-2001</span> </a>
+                                        <a href="#">Deals in:<span>Shoes</span> </a>
+                                        <a href="#">Total products:<span>400</span> </a>
+                                        <a href="#">Employees:<span>400</span> </a>
+                                      
+                                    </div>
+                                </div>
+                               <div class="col-12 flex-row">
+                                <div class="contactBtn">
+                                    <button class="btn"><a href="tel:123-456-7890"><i class="fab fa-whatsapp"></i></a></button>
+                                    <button class="btn"><a href="tel:123-456-7890"><i class="fas fa-phone"></i></a></button>
+                                   <a href="singleDetail.html"> <button class="btn btn-block">More Details</button></a>
+                                </div>
+                               
+                               </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="professionCard filterCard garment mt-2">
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-12">
 
@@ -106,19 +189,27 @@
                                     <div class="profileSmallDescription">
                                         <a href="#">Name:<span>Austin Geko</span> </a>
                                         <a href="#">Joined:<span>02-Dec-2001</span> </a>
-                                        <a href="#">Deals in:<span>Shoes</span> </a>
-                                        <a href="#">Total products:<span>400</span> </a>
+                                        <a href="#">Deals in:<span>Garments</span> </a>
+                                        <a href="#">Total products:<span>50</span> </a>
                                         <a href="#">Employees:<span>400</span> </a>
-                                        <a href="singleDetail.html"><span>Show more...</span> </a>
+                                      
                                     </div>
                                 </div>
+                               <div class="col-12 flex-row">
+                                <div class="contactBtn">
+                                    <button class="btn"><a href="tel:123-456-7890"><i class="fab fa-whatsapp"></i></a></button>
+                                    <button class="btn"><a href="tel:123-456-7890"><i class="fas fa-phone"></i></a></button>
+                                   <a href="singleDetail.html"> <button class="btn btn-block">More Details</button></a>
+                                </div>
+                               
+                               </div>
                             </div>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="professionCard mt-2">
+            <div class="professionCard filterCard garment mt-2">
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-12">
 
@@ -127,7 +218,7 @@
                             <div class="row">
                                 <div class="col-lg-4 col-md-4 col-4 align-items-center justify-content-center">
                                     <div class="profileImg">
-                                        <img src="./assets/img/pro4.jpg" alt="" class="img-fluid">
+                                        <img src="./assets/img/pro2.jpg" alt="" class="img-fluid">
                                     </div>
                                 </div>
 
@@ -135,19 +226,27 @@
                                     <div class="profileSmallDescription">
                                         <a href="#">Name:<span>Austin Geko</span> </a>
                                         <a href="#">Joined:<span>02-Dec-2001</span> </a>
-                                        <a href="#">Deals in:<span>Shoes</span> </a>
-                                        <a href="#">Total products:<span>400</span> </a>
+                                        <a href="#">Deals in:<span>Garments</span> </a>
+                                        <a href="#">Total products:<span>50</span> </a>
                                         <a href="#">Employees:<span>400</span> </a>
-                                        <a href="singleDetail.html"><span>Show more...</span> </a>
+                                      
                                     </div>
                                 </div>
+                               <div class="col-12 flex-row">
+                                <div class="contactBtn">
+                                    <button class="btn"><a href="tel:123-456-7890"><i class="fab fa-whatsapp"></i></a></button>
+                                    <button class="btn"><a href="tel:123-456-7890"><i class="fas fa-phone"></i></a></button>
+                                   <a href="singleDetail.html"> <button class="btn btn-block">More Details</button></a>
+                                </div>
+                               
+                               </div>
                             </div>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="professionCard mt-2">
+            <div class="professionCard filterCard garment mt-2">
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-12">
 
@@ -156,7 +255,7 @@
                             <div class="row">
                                 <div class="col-lg-4 col-md-4 col-4 align-items-center justify-content-center">
                                     <div class="profileImg">
-                                        <img src="./assets/img/pro3.jpg" alt="" class="img-fluid">
+                                        <img src="./assets/img/pro2.jpg" alt="" class="img-fluid">
                                     </div>
                                 </div>
 
@@ -164,19 +263,64 @@
                                     <div class="profileSmallDescription">
                                         <a href="#">Name:<span>Austin Geko</span> </a>
                                         <a href="#">Joined:<span>02-Dec-2001</span> </a>
-                                        <a href="#">Deals in:<span>Shoes</span> </a>
-                                        <a href="#">Total products:<span>400</span> </a>
+                                        <a href="#">Deals in:<span>Garments</span> </a>
+                                        <a href="#">Total products:<span>50</span> </a>
                                         <a href="#">Employees:<span>400</span> </a>
-                                        <a href="singleDetail.html"><span>Show more...</span> </a>
+                                      
                                     </div>
                                 </div>
+                               <div class="col-12 flex-row">
+                                <div class="contactBtn">
+                                    <button class="btn"><a href="tel:123-456-7890"><i class="fab fa-whatsapp"></i></a></button>
+                                    <button class="btn"><a href="tel:123-456-7890"><i class="fas fa-phone"></i></a></button>
+                                   <a href="singleDetail.html"> <button class="btn btn-block">More Details</button></a>
+                                </div>
+                               
+                               </div>
                             </div>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="professionCard mt-2">
+            <div class="professionCard filterCard garment mt-2">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-12">
+
+                        <div class="card p-2">
+                            <a href="#" class="shareOption"><i class="fa fa-share-alt"></i></a>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-4 align-items-center justify-content-center">
+                                    <div class="profileImg">
+                                        <img src="./assets/img/pro2.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+
+                                <div class="col-8">
+                                    <div class="profileSmallDescription">
+                                        <a href="#">Name:<span>Austin Geko</span> </a>
+                                        <a href="#">Joined:<span>02-Dec-2001</span> </a>
+                                        <a href="#">Deals in:<span>Garments</span> </a>
+                                        <a href="#">Total products:<span>50</span> </a>
+                                        <a href="#">Employees:<span>400</span> </a>
+                                      
+                                    </div>
+                                </div>
+                               <div class="col-12 flex-row">
+                                <div class="contactBtn">
+                                    <button class="btn"><a href="tel:123-456-7890"><i class="fab fa-whatsapp"></i></a></button>
+                                    <button class="btn"><a href="tel:123-456-7890"><i class="fas fa-phone"></i></a></button>
+                                   <a href="singleDetail.html"> <button class="btn btn-block">More Details</button></a>
+                                </div>
+                               
+                               </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="professionCard filterCard AC mt-2">
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-12">
 
@@ -193,21 +337,112 @@
                                     <div class="profileSmallDescription">
                                         <a href="#">Name:<span>Austin Geko</span> </a>
                                         <a href="#">Joined:<span>02-Dec-2001</span> </a>
-                                        <a href="#">Deals in:<span>Shoes</span> </a>
+                                        <a href="#">Deals in:<span>Appliences</span> </a>
                                         <a href="#">Total products:<span>400</span> </a>
                                         <a href="#">Employees:<span>400</span> </a>
-                                        <a href="singleDetail.html"><span>Show more...</span> </a>
+                                      
                                     </div>
                                 </div>
+                               <div class="col-12 flex-row">
+                                <div class="contactBtn">
+                                    <button class="btn"><a href="tel:123-456-7890"><i class="fab fa-whatsapp"></i></a></button>
+                                    <button class="btn"><a href="tel:123-456-7890"><i class="fas fa-phone"></i></a></button>
+                                   <a href="singleDetail.html"> <button class="btn btn-block">More Details</button></a>
+                                </div>
+                               
+                               </div>
                             </div>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="professionCard filterCard AC  mt-2">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-12">
+
+                        <div class="card p-2">
+                            <a href="#" class="shareOption"><i class="fa fa-share-alt"></i></a>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-4 align-items-center justify-content-center">
+                                    <div class="profileImg">
+                                        <img src="./assets/img/pro1.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+
+                                <div class="col-8">
+                                    <div class="profileSmallDescription">
+                                        <a href="#">Name:<span>Austin Geko</span> </a>
+                                        <a href="#">Joined:<span>02-Dec-2001</span> </a>
+                                        <a href="#">Deals in:<span>Appliences</span> </a>
+                                        <a href="#">Total products:<span>400</span> </a>
+                                        <a href="#">Employees:<span>400</span> </a>
+                                      
+                                    </div>
+                                </div>
+                               <div class="col-12 flex-row">
+                                <div class="contactBtn">
+                                    <button class="btn"><a href="tel:123-456-7890"><i class="fab fa-whatsapp"></i></a></button>
+                                    <button class="btn"><a href="tel:123-456-7890"><i class="fas fa-phone"></i></a></button>
+                                   <a href="singleDetail.html"> <button class="btn btn-block">More Details</button></a>
+                                </div>
+                               
+                               </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
 
 
         </div>
+
+        <script>
+            filterSelection("all")
+            function filterSelection(c) {
+              var x, i;
+              x = document.getElementsByClassName("filterCard");
+              if (c == "all") c = "";
+              for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+              }
+            }
+            
+            function w3AddClass(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+              }
+            }
+            
+            function w3RemoveClass(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                }
+              }
+              element.className = arr1.join(" ");
+            }
+            
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+              btns[i].addEventListener("click", function(){
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+              });
+            }
+            </script>
 
         <script src="./assets/js/main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
