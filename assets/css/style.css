@@ -23,13 +23,11 @@
  a{
     text-decoration: none;
      }
-     /* .card:last-of-type{
-         margin-bottom:20px
-     } */
+  
      .card{
          border: 2px solid black !important;
-         /* background-color: #074970 !important; */
          box-shadow: 0 0 10px rgba(255, 255, 255, 0.616);
+         background:white !impotant;
      }
  .profileSmallDescription a{
 text-decoration: none;
