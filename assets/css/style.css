@@ -23,19 +23,22 @@
  a{
     text-decoration: none;
      }
+     /* .card:last-of-type{
+         margin-bottom:20px
+     } */
      .card{
-         border: 2px solid #7c7c7c7c !important;
-         background-color: #074970 !important;
-         box-shadow: 0 0 10px #7c7c7c;
+         border: 2px solid black !important;
+         /* background-color: #074970 !important; */
+         box-shadow: 0 0 10px rgba(255, 255, 255, 0.616);
      }
  .profileSmallDescription a{
 text-decoration: none;
 width: 100%;
-color: rgba(255, 255, 255, 0.658) !important;
+color: rgba(0, 0, 0, 0.61);
 font-weight: bold
  }
  .profileSmallDescription a span{
-     color: #ffff !important;
+     color: black;
      font-weight:500;
      margin-left:10px
  }
@@ -111,63 +114,148 @@ box-shadow: 0 0 10px black;
 
 
 
-
-
-
-
- .servicesCard .card{
-     padding: 10px;
- }
- .servicesCard .card li{
-     color: #fff;
- }
- .servicesCard .card a{
-     text-decoration: none;
-     color: #fff;
-     font-weight: 500;
- }
- .aboutCard .card{
-     padding: 10px;
- }
- .aboutCard .card p{
-     margin-bottom: 0px;
-     color: #ffff;
-     font-weight: 500;
-     font-size:14px;
- }
- .memberCard .card{
-    padding: 10px !important;
-   
-}
-.memberCard .member{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.memberCard .card img{
-    border-radius:50%;
-    height:60px;
-    width: 60px;
-    border:2px solid #fff;
-}
-.memberCard .card a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 12px;
-    text-align: center;
-    font-weight:500;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    text-transform: capitalize;
-   
-}
 .op{
-    border: 2px solid #7c7c7c9d !important;
+    border: 1px solid #000 !important;
 }
 .search input{
-    border: 2px solid #7c7c7c9d !important;
+    border: 1px solid #000 !important;
+}
+.search button{
+    border: 1px solid #000 !important;
+
+}
+
+.contactBtn{
+   width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+
+}
+.contactBtn button:focus{
+    background-color:#0d6efd;
+    transition: 0.5s;
+    transform:scale(1.1);
+}
+.contactBtn button:focus .fa-whatsapp{
+    background-color:#0d6efd;
+    color: white !important;
+    transition: 0.5s;
+}
+.contactBtn button:focus .fa-phone{
+    background-color:#0d6efd;
+    color: white !important;
+    transition: 0.5s;
+}
+.contactBtn button{
+    border: 1px solid #000;
+    padding: 1px 8px;
+    font-size:24px;
+    margin-top:5px;
+    margin-left: 10px;
+    flex:1
+}
+
+.contactBtn a{
+color: white;
+flex:6;
+}
+.contactBtn a button{
+width:95%;
+font-size:18px;
+padding:5px;
+}
+.contactBtn a button:focus{
+    color: white;
+    background-color:#0d6efd;
+    transform:scale(1)
+}
+
+.contactBtn button .fa-whatsapp{
+    color: green;
+}
+.contactBtn button .fa-phone{
+    color: #0d6efd;
+    font-size:20px;
+}
+
+.filterCard{
+    display: none !important;
+}
+.show{
+    display: block !important;
+}
+.container{
+padding:0 0 10px 0;
+background-color:#0d6efd;
+min-height: 100vh;
 }
 
 
+
+
+
+
+
+
+
+.ownerHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+    
+    
+
+}
+.ownerHeader img{
+    max-height:60px;
+}
+.ownerHeader h5{
+    font-weight: 500;
+    margin-left: 10px;
+    font-size:18px;
+}
+.ownerImage{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.ownerImage img{
+height:150px
+}
+.ownerSm{
+width:100%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.ownerName{
+    width:90%;
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+margin-bottom: 0px;
+font-size:16px;
+font-weight: 500;
+color: rgb(54, 54, 54);
+}
+.ownerName span{
+    color: black;
+    margin-left: 5px;
+}
+.ownerContact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.ownerContact a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+.ownerContact a i{
+margin-right: 5px;
