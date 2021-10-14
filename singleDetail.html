@@ -28,23 +28,23 @@
                     <div class="col-8 align-items-center justify-content-center ">
                         <form action="" class=" search h-100 d-flex align-items-center justify-content-center">
                             <div class="input-group"><input type="text" class="form-control" placeholder=""><button
-                                    class="btn btn-primary"><i class="fas fa-search"></i></button> </div>
+                                    class="btn btn-light"><i class="fas fa-search"></i></button> </div>
                         </form>
                     </div>
                     <div class="col-1 align-items-center justify-content-center">
                         <div class="menuControl d-flex align-items-center justify-content-center h-100">
-                            <i class="fa fa-ellipsis-v "></i>
+                            <i class="fa fa-ellipsis-v text-white "></i>
                         </div>
                     </div>
                 </div>
 
             </header>
             <form action="">
-                <select class="form-select op" aria-label="Default select example">
-                    <option selected>Select category</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                <select class="form-select op" aria-label="Default select example"onchange="filterSelection(this.value)">
+                    <option class="w-100" selected value="all">Select category</option>
+                    <option class="w-100" value="garment">Garment</option>
+                    <option class="w-100" value="shoe">Shoes</option>
+                    <option class="w-100" value="AC">Appliances</option>
                 </select>
             </form>
 
@@ -60,110 +60,35 @@
                     <i class="backBtn fa fa-arrow-right"></i>
                 </div>
             </div>
-            <div class="professionCard mt-2">
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-12">
 
-                        <div class="card p-2">
-                            <a href="#" class="shareOption"><i class="fa fa-share-alt"></i></a>
-                            <div class="row">
-                                <div class="col-lg-4 col-md-4 col-4 align-items-center justify-content-center">
-                                    <div class="profileImg">
-                                        <img src="./assets/img/pro3.jpg" alt="" class="img-fluid">
-                                    </div>
-                                </div>
-
-                                <div class="col-8">
-                                    <div class="profileSmallDescription">
-                                        <a href="#">Name:<span>Austin Geko</span> </a>
-                                        <a href="#">Joined:<span>02-Dec-2001</span> </a>
-                                        <a href="#">Deals in:<span>Shoes</span> </a>
-                                        <a href="#">Total products:<span>400</span> </a>
-                                        <a href="#">Employees:<span>400</span> </a>
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
+            <div class="ownerDetails mt-2">
+              <div class="card">
+                <div class="ownerHeader">
+                    <img src="./assets/img/R.png" alt="" class="img-fluid">
+                    <h5>Taneja & sons pvt ltd </h5>
                 </div>
-            </div>
-            <div class="servicesCard mt-2">
-                <div class="card">
-                    <h5 class="text-light">Also deals in</h5>
-                    <ul>
-                        <li><a href="#">Shoes</a></li>
-                        <li><a href="#">Shoes</a></li>
-                        <li><a href="#">Tie</a></li>
-                        <li><a href="#">Schools dress</a></li>
-                        <li><a href="#">Party wear</a></li>
-                        <li><a href="#">jackets</a></li>
-
-                    </ul>
+                <div class="ownerImage">
+                    <img src="./assets/img/pro4.jpg" alt="" class="img-fluid">
                 </div>
-            </div>
-            <div class="aboutCard mt-2">
-                <div class="card">
-                    <h5 class="text-light">About Us</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error laudantium architecto soluta.
-                        Molestias repellendus expedita debitis eum provident omnis vero sint dolorem, quo numquam
-                        laboriosam inventore consequatur assumenda reiciendis ad. Lorem ipsum dolor, sit amet
-                        consectetur adipisicing elit. Ratione similique illum vel facere doloribus amet, aliquam eos
-                        quasi nisi explicabo, optio, quibusdam vero? Rerum delectus ab cupiditate officiis vitae
-                        suscipit?</p>
-                </div>
-            </div>
-            <div class="memberCard mt-2">
-                <div class="card">
-                    <h5 class="text-light">Members</h5>
-                   <div class="row">
-                       <div class="col-4 mb-2">
-                        <div class="member">
-                            <img src="./assets/img/pro1.jpg" alt="" class="img-fluid">
-                            <a href="#">Harinandan</a>
-                        </div>
-                       </div>
-                       <div class="col-4 mb-2">
-                        <div class="member">
-                            <img src="./assets/img/pro1.jpg" alt="" class="img-fluid">
-                            <a href="#">ompal misra</a>
-                        </div>
-                       </div>
-                       <div class="col-4 mb-2">
-                        <div class="member">
-                            <img src="./assets/img/pro2.jpg" alt="" class="img-fluid">
-                            <a href="#">rajender</a>
-                        </div>
-                       </div>
-                       <div class="col-4 mb-2">
-                        <div class="member">
-                            <img src="./assets/img/pro4.jpg" alt="" class="img-fluid">
-                            <a href="#">shriwastav</a>
-                        </div>
-                       </div>
-                       <div class="col-4 mb-2">
-                        <div class="member">
-                            <img src="./assets/img/pro3.jpg" alt="" class="img-fluid">
-                            <a href="#">Omkar</a>
-                        </div>
-                       </div>
-                       <div class="col-4 mb-2">
-                        <div class="member">
-                            <img src="./assets/img/pro2.jpg" alt="" class="img-fluid">
-                            <a href="#">Aditya</a>
-                        </div>
-                       </div>
-                       <div class="col-4 mb-2">
-                        <div class="member">
-                            <img src="./assets/img/pro1.jpg" alt="" class="img-fluid">
-                            <a href="#">Hariom</a>
-                        </div>
-                       </div>
-                       
-                   </div>
-                </div>
+               <div class="ownerSm">
+                <p class="ownerName">Name: <span>Martin Auslo</span></p>
+                <p class="ownerName">Designation: <span>CEO</span></p>
+                
+                <p class="ownerName">Phone No: <span>1234567890</span></p>
+                <p class="ownerName">Email: <span>abc@gmail.com</span></p>
+                <p class="ownerName">Website: <span>weblog.com</span></p>
+                <p class="ownerName">Address: <span>412, john street, New-Delhi, india (100231)</span></p>
+               
+               </div>
+               <div class="ownerContact my-2">
+                   <a href=""><i class="fab fa-whatsapp"></i>Chat</a>
+                   <a href=""><i class="fa fa-envelope"></i>voice mail</a>
+                   <a href=""><i class="fas fa-video"></i>Video call</a>
+               </div>
+              </div>
             </div>
 
+          
         </div>
 
         <script src="./assets/js/main.js"></script>
