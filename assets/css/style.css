@@ -23,11 +23,13 @@
  a{
     text-decoration: none;
      }
-  
+     /* .card:last-of-type{
+         margin-bottom:20px
+     } */
      .card{
          border: 2px solid black !important;
+         /* background-color: #074970 !important; */
          box-shadow: 0 0 10px rgba(255, 255, 255, 0.616);
-         background:white !impotant;
      }
  .profileSmallDescription a{
 text-decoration: none;
@@ -186,7 +188,7 @@ padding:5px;
 }
 .container{
 padding:0 0 10px 0;
-background-color:#49a8b7 !important;
+background-color:#0d6efd;
 min-height: 100vh;
 }
 
@@ -257,4 +259,74 @@ color: rgb(54, 54, 54);
 }
 .ownerContact a i{
 margin-right: 5px;
+}
+
+
+
+.dealsIn .card{
+    padding:5px;
+}
+.dealsIn img{
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+}
+.dealsIn .col-3{
+    white-space:nowrap;
+    overflow-x:hidden;
+    text-overflow: ellipsis;
+}
+.dealsIn .col-3 a{
+    text-decoration:none;
+    color: black;
+    font-weight: 500;
+    font-size:13px;
+}
+/* hr{
+    color: black !important;
+    height: 1px !important;
+    opacity: 1 !important;
+} */
+.prodDesc{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:flex-start
+}
+.prodDesc a:nth-of-type(1){
+    color: #074970;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 0px;
+    line-height:1;
+}
+.prodDesc a:nth-of-type(2){
+    color: black;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-decoration: none;
+    font-weight: 500;
+    
+}
+.prodDesc p:nth-of-type(1){
+    color: green;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-decoration: none;
+    font-weight: 500;
+   margin: 3px 0;
+}
+.prodDesc p:nth-of-type(2){
+    color: #074970;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-decoration: none;
+    font-weight: 500;
+   /* margin: 5px 0; */
 }
