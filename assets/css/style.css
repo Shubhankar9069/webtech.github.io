@@ -267,9 +267,11 @@ margin-right: 5px;
     padding:5px;
 }
 .dealsIn img{
-    height:40px;
-    width:40px;
+    height:45px;
+    width:45px;
+    padding:5px;
     border-radius: 50%;
+    border: 1px solid black;
 }
 .dealsIn .col-3{
     white-space:nowrap;
